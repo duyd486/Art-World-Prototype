@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerInteract : MonoBehaviour
 {
@@ -7,8 +6,6 @@ public class PlayerInteract : MonoBehaviour
 
     [SerializeField] private float maxDistance = 5f;
     private bool canInteract = false;
-
-    
 
     private void Awake()
     {
@@ -34,7 +31,8 @@ public class PlayerInteract : MonoBehaviour
             {
                 hit.transform.GetComponentInParent<IInteractable>().Interact();
             }
-        } else
+        }
+        else
         {
             canInteract = false;
         }
