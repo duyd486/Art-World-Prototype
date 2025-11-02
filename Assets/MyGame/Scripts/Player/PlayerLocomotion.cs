@@ -22,15 +22,16 @@ public class PlayerLocomotion : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         cameraOriginPosition = cameraTransform.localPosition;
     }
-
-    private void FixedUpdate()
+    private void Update()
     {
-        HandleMovement();
-
         if (Input.GetKeyDown(KeyCode.Space))
         {
             rb.AddForce(Vector3.up * jumpForce);
         }
+    }
+    private void FixedUpdate()
+    {
+        HandleMovement();
 
         //Nếu muốn di chuyển camera tự code thì gỡ comment dòng dưới và xóa các component cinemachine
         //HandleCamera();

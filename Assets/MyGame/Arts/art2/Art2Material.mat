@@ -24,7 +24,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Art2Material
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_Shader: {fileID: 4800000, guid: c4edd00ff2db5b24391a4fcb1762e459, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -34,7 +34,7 @@ Material:
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
+  m_CustomRenderQueue: 2501
   stringTagMap: {}
   disabledShaderPasses:
   - DistortionVectors
@@ -132,7 +132,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _UnlitColorMap:
-        m_Texture: {fileID: 8400000, guid: 1dc7e0464f91f804cbe9788bd5de3aa3, type: 2}
+        m_Texture: {fileID: 8400000, guid: 7c9128393d2f99f45a673e6df007a762, type: 2}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -277,7 +277,7 @@ Material:
     - _UVEmissive: 0
     - _UseEmissiveIntensity: 0
     - _UseShadowThreshold: 0
-    - _ZTestDepthEqualForOpaque: 3
+    - _ZTestDepthEqualForOpaque: 4
     - _ZTestGBuffer: 4
     - _ZTestModeDistortion: 4
     - _ZTestTransparent: 4
