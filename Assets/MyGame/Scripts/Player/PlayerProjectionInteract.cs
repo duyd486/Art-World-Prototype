@@ -51,6 +51,8 @@ public class PlayerProjectionInteract : MonoBehaviour
         objectPlane.localScale = initialScale * scaleFactor;
 
         objectPlane.position = playerCam.position + playerCam.forward * finalDistance;
+
+        objectPlane.GetComponentInChildren<Camera>().gameObject.SetActive(false);
         isCarryPicture = false;
     }
 }
