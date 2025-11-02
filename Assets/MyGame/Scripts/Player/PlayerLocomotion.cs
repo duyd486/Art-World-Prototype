@@ -1,11 +1,10 @@
-﻿using System;
-using Unity.VisualScripting;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerLocomotion : MonoBehaviour
 {
 
     [SerializeField] private float moveSpeed = 7f;
+    [SerializeField] private float jumpForce = 1000f;
     //[SerializeField] private float rotateSpeed = 1f;
 
 
@@ -28,9 +27,14 @@ public class PlayerLocomotion : MonoBehaviour
     {
         HandleMovement();
 
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            rb.AddForce(Vector3.up * jumpForce);
+        }
+
         //Nếu muốn di chuyển camera tự code thì gỡ comment dòng dưới và xóa các component cinemachine
         //HandleCamera();
-        
+
     }
 
     private void HandleMovement()
